@@ -1,0 +1,91 @@
+#G-lightbox-mask{
+	position: fixed;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	background-color: #6c2031;
+	opacity: 0.9;
+	filter: alpha(opacity=50%);
+	z-index: 10000;
+	display: none;
+}
+
+#G-lightbox-popup{
+	position: fixed;
+	left: 50%;
+	margin-left: -150px;
+	top: 0;
+	width: 400px;
+	/*height: 400px;*/
+	z-index: 10001;
+	display: none;
+}
+
+#G-lightbox-popup .lightbox-pic-view{
+	position: relative;
+	border: 5px solid #fff;
+	border-radius: 3px;
+	background:white url(../lightBox/icon/loading.gif) no-repeat center center;
+	overflow: hidden;
+}
+
+#G-lightbox-popup .lightbox-pic-view .lightbox-btn{
+	position: absolute;
+	top: 0;
+	width: 40%;
+	height: 100%;
+	cursor: pointer;
+}
+
+#G-lightbox-popup .lightbox-pic-view .lightbox-prev-btn{
+	left: 0;
+}
+
+#G-lightbox-popup .lightbox-pic-view .lightbox-next-btn{
+	right: 0;
+}
+
+#G-lightbox-popup .lightbox-pic-view .lightbox-prev-btn-show{
+	background: url(../lightBox/icon/prev.png) no-repeat left center;
+	cursor: pointer;
+}
+
+#G-lightbox-popup .lightbox-pic-view .lightbox-next-btn-show{
+	background: url(../lightBox/icon/next.png) no-repeat right center;
+	cursor: pointer;
+}
+
+#G-lightbox-popup .lightbox-pic-view .lightbox-image{
+	display: block;
+}
+
+#G-lightbox-popup .lightbox-pic-caption{
+	position: relative;
+	z-index: 2;
+	margin: 0 5px;
+	background-color: rgba(0, 0, 0, 0.5);
+}
+
+#G-lightbox-popup .lightbox-pic-caption .lightbox-caption-area{
+	margin-top: -99px;
+	padding: 10px 5px;
+	color: #fff;
+}
+
+#G-lightbox-popup .lightbox-pic-caption .lightbox-caption-area .lightbox-of-index{
+	color: #999;
+}
+
+#G-lightbox-popup .lightbox-pic-caption .lightbox-close-btn{
+	position: absolute;
+	width: 27px;
+	height: 27px;
+	right: 10px;
+	top: 13px;
+	background: url(../lightBox/icon/close.png) no-repeat center center;
+}
+
+
+
+

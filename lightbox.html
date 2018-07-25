@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<link type="text/css" rel="stylesheet" href="lightbox.css">
+	<script src="jquery.js"></script>
+	<script src="lightbox.js"></script>
+	<!-- <link type="text/css" rel="stylesheet" href="font/iconfont.css"> -->
+</head>
+<body>
+	class="js-lightbox" 表示这个元素要启用lightbox<br>
+	data-role="lightbox"  表示这个元素要启用lightbox<br>
+	data-source = "img/4.jpg" 原图的地址<br>
+	data-group = "gruop-1"   标识当前是否属于一个组别 <br>
+	data-id = "pic"    图片的唯一标识<br>
+	data-caption = "title"  当前图片的描述文字<br>
+    
+    <h2>1组图片</h2>
+	<div>
+		<img class="js-lightbox" 
+		     data-role="lightbox" 
+		     data-source = "img/1.jpg"
+		     data-group = "gruop-2"
+		     data-id = "pic3"
+		     data-caption = "title3"
+		     src="img/1.jpg" width="107.5" height="151.8">
+		
+	</div>
+
+	<h1>2组图片</h1>
+	<div>
+		<img class="js-lightbox" 
+		     data-role="lightbox"  
+		     data-source = "img/4.jpg"
+		     data-group = "gruop-1"
+		     data-id = "pic"
+		     data-caption = "title"
+		     src="img/4.jpg" width="128" height="85.4">
+		 <img class="js-lightbox" 
+		     data-role="lightbox" 
+		     data-source = "img/10.jpg"
+		     data-group = "gruop-1"
+		     data-id = "pic2"
+		     data-caption = "title2"
+		     src="img/10.jpg" width="128" height="85.4">
+		 <img class="js-lightbox" 
+		     data-role="lightbox" 
+		     data-source = "img/8.jpg"
+		     data-group = "gruop-1"
+		     data-id = "pic3"
+		     data-caption = "title3"
+		     src="img/8.jpg" width="128" height="85.4">		     
+	</div>
+	
+
+
+
+<!--  遮罩 
+<div id="G-lightbox-mask"></div>
+
+ 弹出层  
+<div id="G-lightbox-popup">
+
+	<div class="lightbox-pic-view">
+
+		<span class="lightbox-btn lightbox-prev-btn lightbox-prev-btn-show">
+			 <i class="iconfont icon-009caozuo_qiehuanqizuo "></i> 
+		</span>
+
+		<img class="lightbox-image" src="img/1.jpg" width="100%">
+
+		<span class="lightbox-btn lightbox-next-btn lightbox-next-btn-show">
+			<i class="iconfont icon-010caozuo_qiehuanqiyou"></i> 
+		</span>
+
+	</div>
+
+	<div class="lightbox-pic-caption">
+
+		<div class="lightbox-caption-area">
+			<p class="lightbox-pic-desc">图片标题</p>
+			<span class="lightbox-of-index">当前索引： 1 of 4</span>
+		</div>	
+
+		<span class="lightbox-close-btn">
+			 <i class="iconfont icon-guanbi"></i> 
+		</span>
+
+	</div >
+</div>-->
+
+<script>
+	$(function(){
+		var lightbox = new LightBox();
+	})
+</script>
+
+</body>
+</html>
